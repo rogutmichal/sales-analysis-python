@@ -184,5 +184,26 @@ plt.pie(
 plt.title("Revenue Share by Payment Method")
 
 plt.show()
-# df.to_csv("data/sales_cleaned.csv", index=False)
+
+print("\n=== KEY INSIGHTS ===")
+
+top_city = city_sales.loc[city_sales["Revenue"].idxmax()]
+print(
+    f"Top city: {top_city['City']} "
+    f"({top_city['Revenue']:,.2f} revenue)"
+)
+
+top_product = product_sales.loc[product_sales["Revenue"].idxmax()]
+print(
+    f"Top product: {top_product['Product']} "
+    f"({top_product['Revenue']:,.2f} revenue)"
+)
+
+top_manager = manager_sales.loc[manager_sales["Revenue"].idxmax()]
+print(
+    f"Top manager: {top_manager['Manager']} "
+    f"({top_manager['Revenue']:,.2f} revenue)"
+)
+
+
 
