@@ -56,6 +56,9 @@ Dane są grupowane według:
 Projekt generuje wykresy:
 
 -  przychód według miasta
+  <img width="1000" height="600" alt="Figure_1" src="https://github.com/user-attachments/assets/266549a0-6374-412a-a5d7-de9e87175ec2" />
+
 -  przychód według produktu
 -  trend sprzedaży w czasie
-- udział procent
+-  przychody według metody kupna
+-  przychody według metody płatności
