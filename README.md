@@ -13,7 +13,8 @@ Celem projektu jest szybka analiza wyników sprzedaży oraz identyfikacja najwa�
 - Python 3
 - Pandas – analiza i przetwarzanie danych
 - Matplotlib – wizualizacja danych
-
+- Streamlit – interaktywny dashboard webowy
+- Plotly Express – interaktywne wykresy
 ---
 
 ##  Proces analizy danych
@@ -75,4 +76,57 @@ Projekt generuje wykresy:
 -  przychody według metody płatności
 
 <img width="700" height="700" alt="Figure_5" src="https://github.com/user-attachments/assets/2d28a723-12c0-438b-88f7-799f0e47741d" />
+
+
+
+---
+
+## Aktualizacja – Interaktywny Dashboard (Streamlit + Plotly)
+
+Projekt został rozszerzony o interaktywny dashboard webowy umożliwiający analizę danych sprzedażowych w czasie rzeczywistym.
+
+### Nowe technologie
+
+* Streamlit – budowa aplikacji webowej
+* Plotly Express – interaktywne wizualizacje danych
+
+### Dodane funkcjonalności
+
+#### Interaktywne filtry
+
+Użytkownik może filtrować dane według:
+
+* miasta
+* produktu
+* menedżera
+
+Po zastosowaniu filtrów wszystkie wskaźniki oraz wykresy aktualizują się automatycznie.
+
+#### Dashboard KPI
+
+Dodano dynamiczne wskaźniki biznesowe:
+
+* całkowity przychód
+* liczba zamówień
+* średnia wartość zamówienia
+* liczba unikalnych produktów
+
+#### Interaktywne wizualizacje
+
+Dashboard prezentuje:
+
+* trend przychodów w czasie
+* przychód według miasta
+* wyniki sprzedażowe menedżerów
+* TOP 5 najlepiej sprzedających się produktów
+* strukturę metod płatności
+* strukturę typów zakupów
+
+#### Optymalizacja wydajności
+
+Zastosowano mechanizm `@st.cache_data`, który ogranicza ponowne wczytywanie oraz przetwarzanie danych, poprawiając wydajność aplikacji.
+
+### Widok dashboardu
+
+*Tutaj możesz dodać zrzuty ekranu aplikacji Streamlit.*
 
